@@ -10,11 +10,11 @@ const CLASS_HIDDEN = "hidden";
 
 function inputEvent(event) {
     event.preventDefault();
-    const username = loginInput.value; //////////////////////////////외워야함.
+    const username = loginInput.value;
     localStorage.setItem("username", username);
-    form.classList.add(CLASS_HIDDEN); //입력폼을 삭제한다.
-    h1.classList.remove(CLASS_HIDDEN); //환영폼을 보여준다
-    h1.innerText = `Welcome ${username}!`; ///////// 외워야함 innerText
+    form.classList.add(CLASS_HIDDEN);
+    h1.classList.remove(CLASS_HIDDEN);
+    h1.innerText = `Welcome ${username}!`;
 };
 
 
@@ -23,11 +23,11 @@ const aname = localStorage.getItem("username");
 
 if(aname === null){
     form.classList.remove(CLASS_HIDDEN);
-    // form.addEventListener("submit", inputEvent);  //처음방문한 이용자
+    // form.addEventListener("submit", inputEvent);
 }else{
     form.classList.add(CLASS_HIDDEN);
-    h1.classList.remove(CLASS_HIDDEN);          //중복방문(등록된) 이용자
+    h1.classList.remove(CLASS_HIDDEN); 
     h1.innerText = `Hello ${aname} !`;
 };
 
-form.addEventListener("submit", inputEvent); /////////////  외워야됨.  form 을 지정해서 이벤트 리스너를 적용
+form.addEventListener("submit", inputEvent);
