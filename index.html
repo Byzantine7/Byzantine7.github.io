@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vanilla JS Clone Coding by Nomad Coder</title>
+  </head>
+  <body>
+    <div id="bgimg">
+    </div>
+
+    <form id="sign">
+      <input type="text" placeholder="what's your name?" required maxlength="20">
+      <input type="submit" value="login">
+    </form>
+    <h2 id="hidden"></h2>
+
+    <h2 id="clock">00:00</h2>
+    
+    <div id="quote">
+      <li></li>
+      <li></li>
+    </div>
+
+    <i class="fa-sharp fa-solid fa-image"></i>
+    <!-- ***** Side Bar Start***** -->
+    <div class="fix">  
+      <input type="checkbox" id="menuicon">
+      <label for="menuicon">
+          <span>To Do</span>
+      </label>
+      <div class="sidebar" style="width:320px; height:100%">
+          <div class="sideform">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+            <ul id="todo-list">
+              <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required/>
+              </form>
+            </ul>
+          </div>      
+      </div>
+    </div> 
+    <!-- ***** Side Bar End***** -->
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/81491f17e3.js" crossorigin="anonymous"></script>
+  </body>
+</html>
