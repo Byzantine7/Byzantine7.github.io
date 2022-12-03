@@ -17,10 +17,10 @@ function deleteToDo(event){
 }
 
 function paintTodo(newTodo){
-    const li = document.createElement("li");  //html 태그 요소를 만든다
+    const li = document.createElement("li");
     li.id = newTodo.id;
-    const span = document.createElement("span");  //span만듬
-    span.innerText = newTodo.text;                       //
+    const span = document.createElement("span");
+    span.innerText = newTodo.text;
     const button = document.createElement("button");
     button.innerText = "🗑";
     button.classList.add("btn");
