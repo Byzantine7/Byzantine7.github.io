@@ -1,4 +1,4 @@
-const images = ["0.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","8.jpg","10.jpg","11.jpg","12.jpg"];  //이미지 리스트 만들기
+const images = ["0.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","8.jpg","10.jpg","11.jpg","12.jpg"];
 
 const button = document.querySelector(".fa-sharp");
 
